@@ -1,0 +1,98 @@
+body{
+    background: #49b5dcf3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    background-color: rgb(155, 89, 203);
+    border: 2px solid rgb(80, 65, 132);
+    border-radius: 20px 20px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    padding: 15px;
+}
+nav{
+    background-color: rgb(134, 90, 172);
+    border: 2px solid rgb(70, 51, 105);
+    border-radius: 22px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 5px;
+}
+nav ul{
+    padding: 0 0;
+    margin:  0 1px;
+}
+na, ul li{
+    display: inline;
+    list-style: none;
+    margin: 0 5px;
+    font: bold 12px verdana;
+}
+section{
+    width: 40%;
+    border: 1px solid black;
+    padding: 10px 10px;
+    border-radius: 20px;
+    margin:  10px auto;
+    background:  linear-gradient(rgb(85, 241, 218),rgb(101, 101, 173));
+}
+form{
+    background: silver;
+    width: 70%;
+    border-radius: 20px;
+    margin: 10px auto;
+    box-shadow: inset 0 0 10px purple;
+}
+fieldset{
+    border-style: none;
+}
+label{
+    font-size: 18px;
+}
+textarea{
+    resize: both;
+    max-height: 100px;
+}
+input:focus,textarea:focus{
+    border-color: rgb(130, 121, 228);
+    cursor: pointer;
+    box-shadow: inset 0 0 8px rgba(170, 180, 255, 0.6);
+    outline:0 none;
+}
+form button{
+    width: 40%;
+    margin: 15px 0px 20px 25px;
+    height: 40px;
+    background: radial-gradient(teal, black);
+    border: 2px solid black;
+    color: white;
+    border-radius: 15px 15px;
+}
+form button:hover{
+background: lightblue;
+text-decoration: underline;
+color: black;
+cursor: pointer;
+}
+form input{
+height: 20px;
+box-sizing: border-box;
+color: black;
+outline: none;
+border: 1px solid black;
+}
+footer{
+    font-size: 16px;
+    text-align: center;
+    color: rgb(0, 0, 255)
+}
