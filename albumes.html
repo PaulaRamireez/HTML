@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/albumes.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>ALBUMES</title>
+</head>
+<body>
+    <div class="container">
+    <h1 class="col-12">ALBUMES</h1>
+    <button id="bot_tarjetas" onclick="seleccioncarro('tarjetas')" class="botones_opciones">TARJETAS</button>
+    <button id="botcarro"onclick="seleccioncarro('tabla_carrito')" class="botones_opciones">CARRITO</button>
+    <header>
+        <img id="logo" src= "img/logo bmth.png" alt="logo">
+        
+        <nav class="barranavegacion">
+                <a class="menu" href="principal.html">Inicio</a>
+                <a class="menu" href="albumes.html">Albumes</a>
+                <a class="menu" href="albumes.html">Carrito</a>
+                <a id="login" class="sesion" href="../html/login.html">Ingresar</a>
+                <a id="sign" class="sesion" href="sign.html">Registrarse</a>
+        </nav>
+    </header>
+    <div id="filtrar" class="col-12 opciones tarjetas">
+        <h2 id="actfiltrar" style="cursor: pointer;" class="col-12" onclick="actfiltro()">Filtrar</h2> </div>
+    <div id="divfiltros" hidden>
+    <ol id="filtros" class="col-12" >
+        <li>
+            <button id="juego" style="cursor: pointer;" class="filtro active" onclick="seleccionfiltro('juego')">Todos</button>
+        </li>
+        <li>
+            <button id="accion" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('accion')">Colaboraciones</button>
+        </li>
+        <li>
+            <button id="carreras" style="cursor: pointer;" class="filtro" onclick="seleccionfiltro('carreras')">Mas vendidos </button>
+        </li>
+    </ol>
+    </div>
+    <ul class="opciones tarjetas col-12">
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src= "img/Sempiternal.png" alt="bad decisions">
+                <h2 class="nom_juego">
+                    Sempiternal
+                </h2>
+                <h3 class="des_juego" hidden>
+                    Eterno
+                       <br>
+                       <br>Sempiternal es el cuarto álbum de estudio de la banda de rock británica Bring Me the Horizon. Fue lanzado el 1 de abril de 2013 en todo el mundo a través de RCA Records, un sello subsidiario de Sony Music, y el 2 de abril de 2013 en los Estados Unidos y Canadá a través de Epitaph Records
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $78.489</b>
+                </h3>
+                <button class="bot_agcarrito" >Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li  class="juego accion">
+            <div>
+                <img class="img_juego" src= "img/that.webp" alt="viego">
+                <h2 class="nom_juego">
+                    That's The Spirit
+                </h2>
+                <h3 class="des_juego" hidden>
+                    Ese es el espíritu
+                       <br>
+                       <br>That's the Spirit —en español: Ese es el espíritu— es el nombre del quinto álbum de estudio de la banda británica Bring Me the Horizon. Fue lanzado el 11 de septiembre de 2015, ​ y marca un sonido bastante alejado al de sus orígenes como una banda de metalcore
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $206.242</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego carreras multijugador">
+            <div>
+                <img class="img_juego" src= "img/amo.jpg" alt="crash">
+                <h2 class="nom_juego">
+                     Amo
+                </h2>
+                <h3 class="des_juego" hidden>
+                    Amo
+                        <br>
+                       <br>Amo es el sexto álbum de estudio de la banda británica Bring Me the Horizon. Originalmente iba ser lanzado el 11 de enero de 2019, pero se retraso el 25 de enero, y se anunció el 22 de agosto de 2018, un día después del lanzamiento del primer sencillo "Mantra"
+                </h3>
+                <h3 class="pre_juego">
+                   <b> $42.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div>
+                <img class="img_juego" src= "img/live.jpg" alt="gta">
+                <h2 class="nom_juego">
+                    Live at the Royal Albert Hall
+                <h3 class="des_juego" hidden>
+                    En directo en el Royal Albert Hall
+                    <br>
+                       <br>«Live at the Royal Albert Hall es un álbum directo publicado por la banda británica Bring Me the Horizon. Fue grabado el 22 de abril de 2016 en el Royal Albert Hall, con acompañamiento de la Orquesta Parallax dirigida por Simon Dobson.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $45.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego accion multijugador">
+            <div >
+                <img class="img_juego" src= "img/suicide.webp" alt="lol">
+                <h2 class="nom_juego">
+                    Suicide Season
+                </h2>
+                <h3 class="des_juego" hidden>
+                    Temporada de suicidios
+                       <br>
+                       <br>Suicide Season —en español: Temporada de suicidio— es el segundo álbum de estudio de la banda británica Bring Me the Horizon. Fue publicado el 29 de septiembre de 2008 por Visible Noise en el Reino Unido y Europa.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $174.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador">
+            <div >
+                <img class="img_juego" src= "img/music.jpg" alt="mondongo">
+                <h2 class="nom_juego">
+                    Music to Listen To...
+                </h2>
+                <h3 class="des_juego" hidden>
+                    Música para escuchar...
+                       <br>
+                       <br>Music to Listen To... es el tercer EP de la banda británica Bring Me the Horizon. Fue lanzado el 27 de diciembre de 2019 sin previo aviso. El lanzamiento fue producido por los miembros de la banda Oliver Sykes y Jordan Fish, y presenta colaboraciones con varios artistas, incluidos Halsey y Yonaka.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $177.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+        <li class="juego multijugador">
+            <div >
+                <img class="img_juego" src= "img/human.jpg" alt="justdance">
+                <h2 class="nom_juego">
+                    Post Human: Survival Horror
+
+                </h2>
+                <h3 class="des_juego" hidden>
+                    Post humana: horror de supervivencia
+                       <br>
+                       <br>Post Human: Survival Horror es el cuarto EP de la banda británica Bring Me the Horizon siendo publicado el 30 de octubre de 2020. Fue precedido por cuatro sencillos: "Ludens", "Parasite Eve", "Obey" y "Teardrops". El EP fue producido por el líder Oliver Sykes, el tecladista Jordan Fish y Mick Gordon.
+                </h3>
+                <h3 class="pre_juego">
+                    <b> $148.000</b>
+                </h3>
+                <button class="bot_agcarrito">Agregar al carrito</button>
+            </div>
+        </li>
+
+    </ul>
+    <div class="opciones tabla_carrito ocultas">
+        <table class="table">
+
+            <tr class="fila">
+          
+              <td ><span>#</span></td>
+          
+              <td class="producto"><span>Producto</span></td>
+          
+              <td ><span>Cantidad</span></td>
+
+              <td ><span>Precio unitario</span></td>
+
+              <td ><span>Subtotal</span></td>
+
+              <td ><span></span></td>
+          
+            </tr>
+        <tbody id="tbody">
+        </tbody>
+        </table>
+        <div id="seccion_total">
+            <div style="font-size: 2rem;">
+                <p>Total a pagar es: </p>
+                <p id="PAGO"></p>
+            </div>
+            <button id="bot_calcular" >Calcular total a pagar</button>
+        </div>
+    </div>
+    </div>
+    <footer class="col-12">
+        <p><i>Derechos reservados &copy; 2022@BMTH</i></p>
+    </footer>
+</body>
+
+<script src="../js/jquery.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<script src="../js/barmenu.js"></script>
+<script src="../js/filtro.js"></script>
+<script src="../js/carrito.js"></script>
+</html>
